@@ -1,0 +1,31 @@
+name: azure.group.create
+description: creates an azure resource group (if it doesn't already exist)
+inputs:
+  subscriptionId:
+    string:
+      constraints: { minLength: 1 }
+      description: id of azure subscription
+  username:
+    string:
+      constraints: { format: email }
+      description: email address of azure account
+  password:
+    string:
+      constraints: { minLength: 1 }
+      description: password of azure account
+      isSecret: true
+  location:
+    string:
+      constraints: { minLength: 1 }
+      description: location of the resource group
+      default: westus
+  name:
+    string:
+      constraints: { minLength: 1 }
+      description: name of the resource group
+run:
+  container:
+    image: { ref: 'azuresdk/azure-cli-python' }
+    cmd: [ /cmd.sh ]
+    files: { /cmd.sh }
+    envVars: { subscriptionId, username, password, location, name }
