@@ -25,7 +25,7 @@ inputs:
       description: name of the resource group
 run:
   container:
-    image: { ref: 'azuresdk/azure-cli-python' }
+    image: { ref: 'azuresdk/azure-cli-python:0.2.10' }
     cmd: [ /cmd.sh ]
     files: { /cmd.sh }
     envVars: { subscriptionId, username, password, location, name }
