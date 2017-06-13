@@ -23,5 +23,14 @@ opctl run github.com/opspec-pkgs/azure.group.create#VERSION
 run:
   op:
     pkg: { ref: github.com/opspec-pkgs/azure.group.create#VERSION }
-    inputs: { subscriptionId, username, password, location, name }
+    inputs:
+      subscriptionId:
+      loginId:
+      loginSecret:
+      location:
+      name:
+      # begin optional args
+      loginTenantId:
+      loginType:
+      # end optional args
 ```
