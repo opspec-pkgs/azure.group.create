@@ -1,7 +1,7 @@
-# problem statement
+# Problem statement
 creates an azure resource group (if it doesn't already exist)
 
-# example usage
+# Example usage
 
 > note: in examples, VERSION represents a version of the azure.group.create pkg
 
@@ -34,3 +34,8 @@ run:
       loginType:
       # end optional args
 ```
+
+# Support
+
+join us on [![Slack](https://opspec-slackin.herokuapp.com/badge.svg)](https://opspec-slackin.herokuapp.com/)
+or [open an issue](https://github.com/opspec-pkgs/azure.group.create/issues)
