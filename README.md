@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.orgp.create.svg?branch=master)](https://travis-ci.orgp.create)
 
+<img src="icon.svg" alt="icon" height="100px">
 
 # Problem statement
 
@@ -29,10 +30,10 @@ opctl run azure.group.create#2.0.0
 op:
   pkg: { ref: azure.group.create#2.0.0 }
   inputs:
+    subscriptionId:
     loginId:
     loginSecret:
     name:
-    subscriptionId:
     # params w/ default
     location:
     loginTenantId:
