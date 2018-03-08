@@ -15,20 +15,20 @@ this version of the pkg is in [![opspec 0.1.5](https://img.shields.io/badge/opsp
 ## Install
 
 ```shell
-opctl pkg install azure.group.create#2.0.0
+opctl pkg install azure.group.create#2.1.0
 ```
 
 ## Run
 
 ```
-opctl run azure.group.create#2.0.0
+opctl run azure.group.create#2.1.0
 ```
 
 ## Compose
 
 ```yaml
 op:
-  pkg: { ref: azure.group.create#2.0.0 }
+  pkg: { ref: azure.group.create#2.1.0 }
   inputs:
     subscriptionId:
     loginId:
