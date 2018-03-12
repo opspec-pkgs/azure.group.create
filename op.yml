@@ -1,4 +1,4 @@
-name: azure.group.create
+name: github.com/opspec-pkgs/azure.group.create
 description: creates an azure resource group (if it doesn't already exist)
 inputs:
   subscriptionId:

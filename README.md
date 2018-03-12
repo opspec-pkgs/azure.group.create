@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.orgp.create.svg?branch=master)](https://travis-ci.orgp.create)
+[![Build Status](https://travis-ci.org/opspec-pkgs/azure.group.create.svg?branch=master)](https://travis-ci.org/opspec-pkgs/azure.group.create)
 
 <img src="icon.svg" alt="icon" height="100px">
 
@@ -15,20 +15,20 @@ this version of the pkg is in [![opspec 0.1.5](https://img.shields.io/badge/opsp
 ## Install
 
 ```shell
-opctl pkg install azure.group.create#2.1.0
+opctl pkg install github.com/opspec-pkgs/azure.group.create#2.1.0
 ```
 
 ## Run
 
 ```
-opctl run azure.group.create#2.1.0
+opctl run github.com/opspec-pkgs/azure.group.create#2.1.0
 ```
 
 ## Compose
 
 ```yaml
 op:
-  pkg: { ref: azure.group.create#2.1.0 }
+  pkg: { ref: github.com/opspec-pkgs/azure.group.create#2.1.0 }
   inputs:
     subscriptionId:
     loginId:
@@ -45,7 +45,7 @@ op:
 join us on
 [![Slack](https://opspec-slackin.herokuapp.com/badge.svg)](https://opspec-slackin.herokuapp.com/)
 or
-[open an issue](https://azure.group.create/issues)
+[open an issue](https://github.com/opspec-pkgs/azure.group.create/issues)
 
 # Releases
 
